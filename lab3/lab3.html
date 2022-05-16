@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Моє дз</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th colspan="2" align="center">
+                    Pizza Shop 2.0
+                </th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <form id="Name">
+                        <input type="text" name="name" required autofocus placeholder="Ukrainian pizzas"/>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza toping</td>
+                <td>
+                    <form id="PizzaToping">
+                        <input type="radio" name="Pizza toping" id="Supreme"> <label for="Supreme">Supreme</label> <br>
+                        <input type="radio" name="Pizza toping" id="Vegetarian"> <label for="Vegetarian">Vegetarian</label> <br>
+                        <input type="radio" name="Pizza toping" id="Hawaiian"> <label for="Hawaiian">Hawaiian</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza sauce</td>
+                <td>
+                    <select name="sauce" id="sauce">
+                        <option>Tomato</option>
+                        <option>Cucumber</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extra</td>
+                <td>
+                    <form id="OptionalExtra">
+                        <input type="checkbox" name="OptionalExtra" id="ExtraCheese"> <label for="ExtraCheese">Extra Cheese</label>
+                        <input type="checkbox" name="OptionalExtra" id="GlutenFreeBase"> <label for="GlutenFreeBase">Gluten Free Base</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <form id="DeliveryInstructions">
+                        <label for="DeliveryInstructions_txt">Delivery Instructions:<br></label>
+                        <textarea placeholder="In a…" name="DeliveryInstructions_txt" id="DeliveryInstructions_txt" rows="4" cols="40" required></textarea>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <form id="Send">
+                        <input type="submit" value="Send Request">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

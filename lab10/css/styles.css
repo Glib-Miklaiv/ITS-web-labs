@@ -1,0 +1,135 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #111;
+    /* overflow: hidden; */
+}
+
+li {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    /* "img ."  */
+    "img name"
+    "img sex";
+    margin: 10px;
+    cursor: pointer;
+}
+
+li > div {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10%;
+    /* margin: 20px; */
+    grid-area: img;
+}
+
+li > div > img {
+    height: auto;
+    width: 150px;
+    position: relative;
+    top: -20px;
+    /* border-radius: 10%; */
+}
+
+li > b.name {
+    margin-top: auto;
+    color: white;
+    grid-area: name;
+    font-size: xx-large;
+}
+
+li > p.sex {
+    color: white;
+    font-size: large;
+    grid-area: sex;
+}
+
+#modal {
+    /* height: 50%; */
+    /* position: absolute; */
+    /* height: 100px; */
+    /* width: 100px; */
+    cursor: pointer;
+    position: fixed;
+    background-color: #ffffff80;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* align-content: center; */
+}
+
+.modal-content {
+    position: fixed;
+    /* padding: 20px; */
+    cursor: default;
+    margin: auto;
+    margin-top: 50px;
+    overflow: scroll;
+    height: 80%;
+    border-style: double;
+    border-color: aliceblue;
+    background-color: #585858;
+    /* visibility: hidden; */
+    /* z-index: 1; */
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    float: right;
+    cursor: pointer;
+    transform: scale(3);
+}
+
+.close-button:hover {
+    background-color: #ffffff80;
+    /* width: 15px; */
+    width: auto;
+    height: auto;
+    color: darkred;
+    border-radius: 10px;
+}
+
+.modal-content > img {
+    /* float:; */
+
+}
+
+.modal-content > section {
+    /* flex-grow: 1; */
+    /* overflow: scroll; */
+    padding: 20px;
+    /* width: ; */
+    /* margin: auto; */
+}
+
+p.about {
+    color: gray;
+    font-size: small;
+    margin: auto
+}
+
+p.data {
+    margin: auto;
+    width: 300px;
+    height: auto;
+    /* word-wrap: break-word; */
+    color: white;
+}
+
+b.name {
+    color: white;
+    font-size: xx-large;
+}
+

@@ -1,0 +1,159 @@
+.main {
+    /* display: flex; */
+    display: grid;
+    color: white;
+    font-size: xx-large;
+    font-family: sans-serif;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20%, repeat(4, 1fr);
+    grid-template-areas: 
+    "display display display display"
+    "AC sign percent obelus"
+    "seven eight nine multiplication"
+    "four five six minus"
+    "one two three plus"
+    "nul nul comma equal";
+}
+
+.display {
+    background-color: #555555;
+    font-size: 72px;
+    text-align: right;
+    grid-area: display;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.display > p {
+    padding-top: 3%;
+}
+
+.button {
+    text-align: center;
+    outline: 1px solid;
+    outline-color: black;
+}
+
+.other {
+    background: linear-gradient(#666666, #444444);
+}
+
+.action {
+    background-color: orange;
+}
+
+.number {
+    background-color: gray;
+}
+
+#AC{
+    grid-area: AC;
+}
+
+#sign {
+    grid-area: sign;
+}
+
+
+#percent {
+    grid-area: percent;
+}
+
+#obelus{
+    grid-area: obelus;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#multiplication {
+    grid-area: multiplication;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#nul {
+    grid-area: nul;
+    border-radius: 0px 0px 0px 30px;
+}
+
+#comma {
+    grid-area: comma;
+}
+
+#equal {
+    grid-area: equal;
+    border-radius: 0px 0px 30px 0px;
+}
+
+.circles {
+    position: fixed;
+    display: grid;
+    grid-template-areas:
+    ". . . . . . ."
+    ". red . yellow . green .";
+    grid-template-columns: 20px 15px 5px 15px 5px 15px 1fr;
+    grid-template-rows: 15px 1fr;
+}
+
+.red {
+    grid-area: red;
+    background-color:crimson;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color:goldenrod;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+
+.green {
+    grid-area: green;
+    background-color:forestgreen;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
