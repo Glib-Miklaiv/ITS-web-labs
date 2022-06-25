@@ -36,11 +36,11 @@ class Manager extends Employee {
     countedSalary() {
         let countDeveloper;
         this.team.forEach(employee => {
-            if (typeof employee === "Developer") {
+            if (employee.constructor.name === "Developer") {
                 countDeveloper++;
             }
         });
-        return this.team.lenght > 5? super.countedSalary() + 200 : (this.team.lenght > 10 ? super.countedSalary() + 300 : super.countedSalary()) * (countDeveloper / this.team.lenght > 0.5 ? 1.1 : 1);
+        return this.team.length > 5? super.countedSalary() + 200 : (this.team.length > 10 ? super.countedSalary() + 300 : super.countedSalary()) * (countDeveloper / this.team.length > 0.5 ? 1.1 : 1);
     }
 }
 
